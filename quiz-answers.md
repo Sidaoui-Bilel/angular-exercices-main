@@ -1,8 +1,8 @@
 # Angular 17+ Quiz - Answer Sheet
 
-**Candidate Name:** _______________________
-**Date:** _______________________
-**Time Started:** _______________________
+**Candidate Name:**  Nicolas
+**Date:** 26/03/2026
+**Time Started:** 15:30
 
 ---
 
