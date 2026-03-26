@@ -11,10 +11,10 @@
 ### Q1. Multiple Choice (2 points)
 What is the key difference between `signal()` and `computed()`?
 
-A) `signal()` is read-only, `computed()` is writable
-B) `signal()` is writable, `computed()` is read-only and derives its value
-C) They are identical, just different names
-D) `computed()` doesn't trigger change detection
+- A) `signal()` is read-only, `computed()` is writable
+- B) `signal()` is writable, `computed()` is read-only and derives its value
+- C) They are identical, just different names
+- D) `computed()` doesn't trigger change detection
 
 **Answer:** ___
 
@@ -30,10 +30,10 @@ Signals automatically trigger change detection in components using Default chang
 ### Q3. Multiple Choice (2 points)
 When should you use `linkedSignal()` instead of `computed()`?
 
-A) When you need a derived value that never changes
-B) When you need a signal that resets based on specific dependencies
-C) When you want better performance
-D) `linkedSignal()` is deprecated in Angular 17+
+- A) When you need a derived value that never changes
+- B) When you need a signal that resets based on specific dependencies
+- C) When you want better performance
+- D) `linkedSignal()` is deprecated in Angular 17+
 
 **Answer:** ___
 
@@ -74,10 +74,10 @@ What happens when you call `mySignal()` vs `mySignal.set(value)` vs `mySignal.up
 ### Q6. Multiple Choice (2 points)
 Which operator should you use with `DestroyRef` to automatically unsubscribe from observables?
 
-A) `takeUntil()`
-B) `takeUntilDestroyed()`
-C) `unsubscribeOn()`
-D) `autoUnsubscribe()`
+- A) `takeUntil()`
+- B) `takeUntilDestroyed()`
+- C) `unsubscribeOn()`
+- D) `autoUnsubscribe()`
 
 **Answer:** ___
 
@@ -85,15 +85,15 @@ D) `autoUnsubscribe()`
 
 ### Q7. True/False (1 point each, 3 total)
 
-A) Effects created with `effect()` are automatically cleaned up when the component is destroyed.
+- A) Effects created with `effect()` are automatically cleaned up when the component is destroyed.
 
 **Answer:** ___
 
-B) If you add an event listener inside an `effect()`, you must return a cleanup function.
+- B) If you add an event listener inside an `effect()`, you must return a cleanup function.
 
 **Answer:** ___
 
-C) Signals don't need cleanup because they don't create subscriptions.
+- C) Signals don't need cleanup because they don't create subscriptions.
 
 **Answer:** ___
 
@@ -123,9 +123,9 @@ export class MyComponent {
 Name THREE common sources of memory leaks in Angular applications.
 
 **Answer:**
-1. _______________________________________________
-2. _______________________________________________
-3. _______________________________________________
+- 1. _______________________________________________
+- 2. _______________________________________________
+- 3. _______________________________________________
 
 ---
 
@@ -134,10 +134,10 @@ Name THREE common sources of memory leaks in Angular applications.
 ### Q10. Multiple Choice (2 points)
 What's the recommended way to inject dependencies in Angular 17+?
 
-A) Constructor injection: `constructor(private http: HttpClient)`
-B) Property injection: `@Inject() http: HttpClient`
-C) Function injection: `http = inject(HttpClient)`
-D) Manual injection: `http = Injector.get(HttpClient)`
+- A) Constructor injection: `constructor(private http: HttpClient)`
+- B) Property injection: `@Inject() http: HttpClient`
+- C) Function injection: `http = inject(HttpClient)`
+- D) Manual injection: `http = Injector.get(HttpClient)`
 
 **Answer:** ___
 
@@ -158,10 +158,10 @@ B) You can mix standalone and module-based components in the same application.
 ### Q12. Multiple Choice (2 points)
 Which change detection strategy should you use with signal-based components?
 
-A) Default - signals work best with default
-B) OnPush - signals work perfectly with OnPush
-C) Detached - to manually control when to check
-D) None - signals don't need change detection
+- A) Default - signals work best with default
+- B) OnPush - signals work perfectly with OnPush
+- C) Detached - to manually control when to check
+- D) None - signals don't need change detection
 
 **Answer:** ___
 
@@ -221,10 +221,10 @@ export class MyComponent {
 }
 ```
 
-A) Using signals in a method
-B) Heavy computation runs on every change detection
-C) The for loop is too large
-D) Nothing wrong, this is optimal
+- A) Using signals in a method
+- B) Heavy computation runs on every change detection
+- C) The for loop is too large
+- D) Nothing wrong, this is optimal
 
 **Answer:** ___
 
@@ -234,15 +234,15 @@ D) Nothing wrong, this is optimal
 
 ### Q16. True/False (1 point each, 3 total)
 
-A) OnPush components only check for changes when `@Input()` references change.
+- A) OnPush components only check for changes when `@Input()` references change.
 
 **Answer:** ___
 
-B) Signal updates trigger change detection in OnPush components.
+- B) Signal updates trigger change detection in OnPush components.
 
 **Answer:** ___
 
-C) Using `trackBy` in `*ngFor` or track in `@for` improves performance by avoiding unnecessary DOM re-renders.
+- C) Using `trackBy` in `*ngFor` or track in `@for` improves performance by avoiding unnecessary DOM re-renders.
 
 **Answer:** ___
 
@@ -251,10 +251,10 @@ C) Using `trackBy` in `*ngFor` or track in `@for` improves performance by avoidi
 ### Q17. Multiple Choice (2 points)
 What's the best way to provide a service that should be singleton across the entire app?
 
-A) `@Injectable()` with no providedIn
-B) `@Injectable({ providedIn: 'root' })`
-C) Add to `providers: []` in AppModule
-D) Add to `providers: []` in every component
+- A) `@Injectable()` with no providedIn
+- B) `@Injectable({ providedIn: 'root' })`
+- C) Add to `providers: []` in AppModule
+- D) Add to `providers: []` in every component
 
 **Answer:** ___
 
@@ -264,10 +264,10 @@ D) Add to `providers: []` in every component
 Rank these approaches from BEST to WORST for managing component state:
 
 ```
-___ A) Using getter methods that compute values on every access
-___ B) Using computed() signals for derived state
-___ C) Using BehaviorSubject with async pipe
-___ D) Using class properties that update manually
+- ___ A) Using getter methods that compute values on every access
+- ___ B) Using computed() signals for derived state
+- ___ C) Using BehaviorSubject with async pipe
+- ___ D) Using class properties that update manually
 ```
 
 (1 = best, 4 = worst)
@@ -283,10 +283,10 @@ You have a component that fetches user data on init and displays it. The data ra
 
 **What pattern would you use to cache this data?**
 
-A) Store in a service with `providedIn: 'root'` and only fetch if not cached
-B) Use `localStorage` to persist data
-C) Use `shareReplay()` operator on the observable
-D) All of the above are valid, depends on requirements
+- A) Store in a service with `providedIn: 'root'` and only fetch if not cached
+- B) Use `localStorage` to persist data
+- C) Use `shareReplay()` operator on the observable
+- D) All of the above are valid, depends on requirements
 
 **Answer:** ___
 
