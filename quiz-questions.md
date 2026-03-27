@@ -177,11 +177,9 @@ Fix the memory leak in this component:
 
 ```typescript
 export class MyComponent implements OnInit {
-  constructor(private http: HttpClient) {}
-
   ngOnInit() {
-    this.http.get('/api/data').subscribe(data => {
-      console.log(data);
+    interval(1000).subscribe(count => {
+      console.log('Count:', count);
     });
   }
 }
@@ -415,7 +413,7 @@ You're building a real-time dashboard that:
 ## Section 3: Advanced (12 points)
 - **Q11:** C (2 pts)
 - **Q12:** B - OnPush only checks when inputs change, events occur, or signals/observables update (2 pts)
-- **Q13:** Use `takeUntilDestroyed()` with inject(DestroyRef) OR async pipe OR toSignal() (3 pts)
+- **Q13:** Use `takeUntilDestroyed()` with `inject(DestroyRef)` to cancel interval on component destroy. Must import from `@angular/core/rxjs-interop` (3 pts)
 - **Q14:** B (2 pts)
 - **Q15:** A: True, B: True, C: True (3 pts)
 
