@@ -12,10 +12,10 @@
 ### Q1. Multiple Choice (1 point)
 What is Angular?
 
-A) A JavaScript library for building user interfaces
-B) A TypeScript-based framework for building web applications
-C) A CSS framework like Bootstrap
-D) A backend framework
+- A) A JavaScript library for building user interfaces
+- B) A TypeScript-based framework for building web applications
+- C) A CSS framework like Bootstrap
+- D) A backend framework
 
 **Answer:** ___
 
@@ -24,10 +24,10 @@ D) A backend framework
 ### Q2. Multiple Choice (2 points)
 Which decorator is used to define an Angular component?
 
-A) `@NgModule`
-B) `@Injectable`
-C) `@Component`
-D) `@Directive`
+- A) `@NgModule`
+- B) `@Injectable`
+- C) `@Component`
+- D) `@Directive`
 
 **Answer:** ___
 
@@ -52,10 +52,10 @@ C) Each component must have a template (inline or external).
 ### Q4. Multiple Choice (2 points)
 What are the core building blocks of an Angular application?
 
-A) Components, Services, Modules
-B) HTML, CSS, JavaScript
-C) Controllers, Views, Models
-D) Reducers, Actions, Store
+- A) Components, Services, Modules
+- B) HTML, CSS, JavaScript
+- C) Controllers, Views, Models
+- D) Reducers, Actions, Store
 
 **Answer:** ___
 
@@ -76,10 +76,10 @@ Name the THREE main ways to pass data in Angular templates.
 ### Q6. Multiple Choice (2 points)
 What is the purpose of the `ngOnInit` lifecycle hook?
 
-A) Called when a component is destroyed
-B) Called once after the first `ngOnChanges` and after component initialization
-C) Called every time an input property changes
-D) Called before the component is created
+- A) Called when a component is destroyed
+- B) Called once after the first `ngOnChanges` and after component initialization
+- C) Called every time an input property changes
+- D) Called before the component is created
 
 **Answer:** ___
 
@@ -88,10 +88,10 @@ D) Called before the component is created
 ### Q7. Multiple Choice (2 points)
 How do you make a service available across the entire application?
 
-A) Import it in every component
-B) `@Injectable({ providedIn: 'root' })`
-C) Add to the imports array
-D) Use `@NgModule` decorator on the service
+- A) Import it in every component
+- B) `@Injectable({ providedIn: 'root' })`
+- C) Add to the imports array
+- D) Use `@NgModule` decorator on the service
 
 **Answer:** ___
 
@@ -119,10 +119,10 @@ export class UserComponent {
 ### Q9. Multiple Choice (2 points)
 Which RxJS operator would you use to transform data from an Observable?
 
-A) `filter()`
-B) `map()`
-C) `subscribe()`
-D) `catchError()`
+- A) `filter()`
+- B) `map()`
+- C) `subscribe()`
+- D) `catchError()`
 
 **Answer:** ___
 
@@ -149,10 +149,10 @@ C) Child routes in Angular require their own `<router-outlet>`.
 ### Q11. Multiple Choice (2 points)
 What's the recommended way to inject dependencies in Angular 16+?
 
-A) Constructor injection: `constructor(private http: HttpClient)`
-B) Property injection: `@Inject() http: HttpClient`
-C) Function injection: `http = inject(HttpClient)`
-D) Manual injection: `http = Injector.get(HttpClient)`
+- A) Constructor injection: `constructor(private http: HttpClient)`
+- B) Property injection: `@Inject() http: HttpClient`
+- C) Function injection: `http = inject(HttpClient)`
+- D) Manual injection: `http = Injector.get(HttpClient)`
 
 **Answer:** ___
 
@@ -161,10 +161,10 @@ D) Manual injection: `http = Injector.get(HttpClient)`
 ### Q12. Multiple Choice (2 points)
 Which change detection strategy should you use for better performance?
 
-A) Default
-B) OnPush
-C) Detached
-D) CheckAlways
+- A) Default
+- B) OnPush
+- C) Detached
+- D) CheckAlways
 
 **Answer:** ___
 
@@ -197,10 +197,10 @@ export class MyComponent implements OnInit {
 ### Q14. Multiple Choice (2 points)
 What is the purpose of standalone components (Angular 14+)?
 
-A) Better performance than regular components
-B) Eliminates the need for NgModules
-C) Allows components to run independently in Web Workers
-D) Provides better type safety
+- A) Better performance than regular components
+- B) Eliminates the need for NgModules
+- C) Allows components to run independently in Web Workers
+- D) Provides better type safety
 
 **Answer:** ___
 
@@ -227,10 +227,10 @@ C) Guards can be implemented as classes or functions in modern Angular.
 ### Q16. Multiple Choice (2 points)
 What is the key difference between `signal()` and `computed()` in Angular 17+?
 
-A) `signal()` is read-only, `computed()` is writable
-B) `signal()` is writable, `computed()` is read-only and derives its value
-C) They are identical, just different names
-D) `computed()` doesn't trigger change detection
+- A) `signal()` is read-only, `computed()` is writable
+- B) `signal()` is writable, `computed()` is read-only and derives its value
+- C) They are identical, just different names
+- D) `computed()` doesn't trigger change detection
 
 **Answer:** ___
 
@@ -310,10 +310,10 @@ Convert this template to use the NEW control flow syntax (Angular 17+):
 ### Q21. Multiple Choice (2 points)
 Which operator should you use with `DestroyRef` to automatically unsubscribe from observables?
 
-A) `takeUntil()`
-B) `takeUntilDestroyed()`
-C) `unsubscribeOn()`
-D) `autoUnsubscribe()`
+- A) `takeUntil()`
+- B) `takeUntilDestroyed()`
+- C) `unsubscribeOn()`
+- D) `autoUnsubscribe()`
 
 **Answer:** ___
 
@@ -339,10 +339,10 @@ export class MyComponent {
 }
 ```
 
-A) Using signals in a method
-B) Heavy computation runs on every change detection cycle
-C) The for loop is too large
-D) Nothing wrong, this is optimal
+- A) Using signals in a method
+- B) Heavy computation runs on every change detection cycle
+- C) The for loop is too large
+- D) Nothing wrong, this is optimal
 
 **Answer:** ___
 
@@ -353,10 +353,10 @@ D) Nothing wrong, this is optimal
 ### Q23. Multiple Choice (2 points)
 What is the difference between `toSignal()` and `toObservable()`?
 
-A) `toSignal()` converts Signal to Observable, `toObservable()` converts Observable to Signal
-B) `toSignal()` converts Observable to Signal, `toObservable()` converts Signal to Observable
-C) They do the same thing, just different names
-D) Both convert Promises to Signals
+- A) `toSignal()` converts Signal to Observable, `toObservable()` converts Observable to Signal
+- B) `toSignal()` converts Observable to Signal, `toObservable()` converts Signal to Observable
+- C) They do the same thing, just different names
+- D) Both convert Promises to Signals
 
 **Answer:** ___
 
